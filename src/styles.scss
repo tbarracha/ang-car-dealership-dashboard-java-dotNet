@@ -11,3 +11,16 @@ body {
   margin-left: 4px;
   margin-right: 4px;
 }
+
+.center {
+  align-items: center;     // Center items horizontally
+  justify-content: center; // Center items vertically
+}
+
+.center-horizontal {
+  justify-content: center; // Center items horizontally only
+}
+
+.center-vertical {
+  align-items: center; // Center items vertically only
+}
