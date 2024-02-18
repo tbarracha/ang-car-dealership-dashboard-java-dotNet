@@ -4,4 +4,10 @@ $red-hat-display: 'Red Hat Display', sans-serif;
 
 body {
   font-family: $red-hat-display;
+  margin: 0;
+}
+
+.margin-horizontal {
+  margin-left: 4px;
+  margin-right: 4px;
 }

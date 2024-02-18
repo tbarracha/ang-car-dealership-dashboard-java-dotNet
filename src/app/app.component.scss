@@ -1,0 +1,16 @@
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+app-side-panel {
+    background-color: #fafafa;
+    flex: 0 0 auto; // This will make the side panel take the minimum space needed
+    width: 320px; // Set the width of the side panel
+    height: 100%; // Occupy full height of the container
+}
+
+app-content-view {
+    flex: 1; // This will make the side panel view take the remaining space
+    height: 100%; // Occupy full height of the container
+}

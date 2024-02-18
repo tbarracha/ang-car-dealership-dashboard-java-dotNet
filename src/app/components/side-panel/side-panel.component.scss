@@ -1,0 +1,18 @@
+$borderThickness: 2px;
+$borderColor: #eeeeee;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+app-side-panel-header {
+    width: 64px;
+    border-right: $borderThickness solid $borderColor;
+}
+
+app-side-panel-content {
+    width: 100%;
+    border-right: $borderThickness solid $borderColor;
+}
