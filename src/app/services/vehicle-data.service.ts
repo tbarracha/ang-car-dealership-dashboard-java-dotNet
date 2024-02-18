@@ -10,25 +10,23 @@ export class VehicleDataService {
   baseUrl: string = 'http://localhost:8080/api';
   
   vehicleURLs: {
+    cars: string,
     types: string,
     status: string,
     condition: string,
     color: string,
-    price: string,
     brands: string,
     models: string,
     licensePlate: string,
-    cars: string,
   } = {
+    cars: `${this.baseUrl}/vehicle/car`,
     types: `${this.baseUrl}/vehicle/type`,
     status: `${this.baseUrl}/vehicle/status`,
     condition: `${this.baseUrl}/vehicle/condition`,
     color: `${this.baseUrl}/color`,
-    price: `${this.baseUrl}/vehicle/price`,
     brands: `${this.baseUrl}/vehicle/brand`,
     models: `${this.baseUrl}/vehicle/model`,
-    licensePlate: `${this.baseUrl}/vehicle/licensePlate`,
-    cars: `${this.baseUrl}/vehicle/car`,
+    licensePlate: `${this.baseUrl}/vehicle/licenseplate`,
   };
   
 

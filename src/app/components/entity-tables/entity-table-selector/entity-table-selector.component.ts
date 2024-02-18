@@ -25,8 +25,7 @@ export class EntityTableSelectorComponent {
   setURL(dataURL: string) {
     this.dataTypeURL = dataURL;
     const splitURL = dataURL.split("/");
-    this.displayString = splitURL[splitURL.length - 1]; // Use square brackets for array indexing
-    console.log("Display String: " + this.displayString);
+    this.displayString = splitURL[splitURL.length - 1];
   }
 
   getData() {
