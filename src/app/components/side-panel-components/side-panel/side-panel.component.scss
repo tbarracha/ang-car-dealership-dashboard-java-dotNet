@@ -1,7 +1,6 @@
-$borderThickness: 2px;
-$borderColor: #eeeeee;
+@import '/src/variables.scss';
 
-.container {
+.side-panel-container {
     display: flex;
     flex-direction: row;
     height: 100%;

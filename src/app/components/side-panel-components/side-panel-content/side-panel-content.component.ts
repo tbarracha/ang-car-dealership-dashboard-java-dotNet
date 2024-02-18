@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { VehicleDataService } from 'src/app/services/vehicle-data.service';
 
 @Component({
@@ -8,22 +8,11 @@ import { VehicleDataService } from 'src/app/services/vehicle-data.service';
 })
 export class SidePanelContentComponent {
 
-  dataType: string | undefined;
-
   constructor(private vehicleDataService: VehicleDataService) {
 
   }
 
-  setDataType(dataType: string) {
-    this.dataType = dataType;
-  }
-
-  getData() {
-    if (this.dataType != null) {
-      this.vehicleDataService.getVehicleData(this.dataType);
-    } else {
-      this.vehicleDataService.getBrands();
-      console.log("No Data Type to fetch. Data type is null!");
-    }
+  getDataTypeURLs() : string[] {
+    return Object.values(this.vehicleDataService.vehicleURLs);
   }
 }

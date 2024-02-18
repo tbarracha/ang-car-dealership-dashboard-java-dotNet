@@ -1,0 +1,19 @@
+@import '/src/variables.scss';
+
+button {
+    background-color: $buttonColor;
+    border: 2px solid $buttonBorderColor;
+    border-radius: 8px;
+    width: 128px;
+    height: 32px;
+}
+
+button:hover {
+    background-color: $buttonColorHover // Lighten the background color on hover for feedback
+}
+
+.entity-table-selector-container {
+    margin-bottom: 4px;
+    align-items: center;     // Center items horizontally
+    justify-content: center; // Center items vertically
+}

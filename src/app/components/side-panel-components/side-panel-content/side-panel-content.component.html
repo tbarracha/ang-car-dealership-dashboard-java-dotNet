@@ -1,2 +1,6 @@
-<p>side-panel-content works!</p>
-<button (click)="getData()"> Data </button>
+<h3>Side Panel Buttons</h3>
+
+<!-- data type button list -->
+<div class="center" *ngFor="let dataTypeURL of getDataTypeURLs()">
+    <app-entity-table-selector [dataTypeURL]="dataTypeURL"></app-entity-table-selector>
+</div>
