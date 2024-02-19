@@ -1,8 +1,12 @@
-<div>
-    <h3>Side Panel Buttons</h3>
-</div>
-
-<!-- data type button list -->
-<div class="flex-column" *ngFor="let dataTypeURL of getDataTypeURLs()">
-    <app-entity-table-selector class="center" [dataTypeURL]="dataTypeURL"></app-entity-table-selector>
+<div class="stetch">
+    <div class="side-header center-column">
+        <h3>Side Panel Buttons</h3>
+    </div>
+    
+    <!-- data type button list -->
+    <div class="stetch flex-column">
+        <div *ngFor="let dataTypeURL of getDataTypeURLs()">
+            <app-entity-table-selector class="center" [dataTypeURL]="dataTypeURL"></app-entity-table-selector>
+        </div>
+    </div>
 </div>
