@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
 @import '/src/variables.scss';
 
-$red-hat-display: 'Red Hat Display', sans-serif;
 
 body {
   font-family: $red-hat-display;
@@ -76,4 +74,54 @@ body {
 
 .button-container button:hover {
   background-color: $buttonColorHover
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+app-side-panel {
+  background-color: #fafafa;
+  flex: 0 0 auto; 
+  width: 320px; 
+  height: 100%;
+}
+
+app-content-view {
+  flex: 1; 
+  height: 100%; 
+}
+
+.side-panel-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+app-side-panel-header {
+  width: 96px;
+  border-right: $borderThickness solid $borderColor;
+}
+
+app-side-panel-header button {
+  width: 40px;
+  height: 40px;
+}
+
+app-side-panel-content {
+  width: 100%;
+  border-right: $borderThickness solid $borderColor;
+}
+
+.entity-table-selector-container {
+  margin-bottom: 4px;
+
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.entity-table-selector-container button {
+  height: 32px;
+  width: 100%;
 }
